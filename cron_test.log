@@ -1,0 +1,23 @@
+/bin/sh: /Applications/MAMP/bin/php/php8.2.0/bin/php: No such file or directory
+PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/firstWebSite/update_timeline_categories.php:7
+Stack trace:
+#0 /Applications/MAMP/htdocs/firstWebSite/update_timeline_categories.php(7): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'events_db')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/firstWebSite/update_timeline_categories.php on line 7
+
+Fatal error: Uncaught mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/firstWebSite/update_timeline_categories.php:7
+Stack trace:
+#0 /Applications/MAMP/htdocs/firstWebSite/update_timeline_categories.php(7): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'events_db')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/firstWebSite/update_timeline_categories.php on line 7
+PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/firstWebSite/update_timeline_categories.php:8
+Stack trace:
+#0 /Applications/MAMP/htdocs/firstWebSite/update_timeline_categories.php(8): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'events_db')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/firstWebSite/update_timeline_categories.php on line 8
+
+Fatal error: Uncaught mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/firstWebSite/update_timeline_categories.php:8
+Stack trace:
+#0 /Applications/MAMP/htdocs/firstWebSite/update_timeline_categories.php(8): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'events_db')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/firstWebSite/update_timeline_categories.php on line 8

@@ -1,0 +1,20 @@
+<!-- submit.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Event</title>
+</head>
+<body>
+    <h1>Submit a New Event</h1>
+    <form action="submit_event.php" method="POST" enctype="multipart/form-data">
+        <label>Event Name: <input type="text" name="event_name" required></label><br>
+        <label>Date: <input type="date" name="event_date" required></label><br>
+        <label>Time: <input type="time" name="event_time" required></label><br>
+        <label>Location: <input type="text" name="event_location" required></label><br>
+        <label>Category: <input type="text" name="event_category" required></label><br>
+        <label>Flyer (image or PDF): <input type="file" name="flyer"></label><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

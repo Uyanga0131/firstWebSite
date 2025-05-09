@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My First Website - Events</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(120deg, #f0f4f8, #d9e4f5);
+      color: #333;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: #1a1a1a;
+    }
+
+    .top-right-image,
+    .top-left-image {
+      position: absolute;
+      top: 10px;
+      width: 120px;
+      height: auto;
+      z-index: 1000;
+    }
+
+    .top-right-image {
+      right: 10px;
+    }
+
+    .top-left-image {
+      left: 10px;
+    }
+
+    .sections-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .fancy-card {
+      width: 300px;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .fancy-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    .card-header {
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .gradient-now {
+      background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    }
+
+    .gradient-upcoming {
+      background: linear-gradient(135deg, #ff9966, #ff5e62);
+    }
+
+    .gradient-past {
+      background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    }
+
+    .card-body {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-body p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .card-button {
+      padding: 10px 18px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .card-button:hover {
+      background-color: #0056b3;
+    }
+
+    .bottom-nav {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 30px 0 10px;
+      margin: 0;
+      background-color: transparent;
+    }
+
+    .bottom-nav li a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #0077cc;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s ease, color 0.3s ease;
+    }
+
+    .bottom-nav li a:hover {
+      border-bottom: 2px solid #0077cc;
+      color: #005999;
+    }
+
+    .submit-button {
+      margin: 20px auto 0;
+      display: block;
+      width: max-content;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background: linear-gradient(90deg, #0072ff, #00c6ff);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 10px 40px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .intro-board {
+      background-color: #f8f9fa;
+      padding: 40px;
+      margin: 40px 0;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .intro-board h2 {
+      font-size: 2.2rem;
+      color: #333;
+    }
+
+    .intro-board p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .intro-board .button-link {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .intro-board .button-link:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo Images -->
+  <img src="UWB.png" alt="UWB Logo" class="top-left-image">
+  <img src="casc.jpg" alt="CASC Logo" class="top-right-image">
+
+  <header>
+    <h1>Welcome to the Event Page!</h1>
+  </header>
+
+  <!-- Introduction to the Integrated Board for Flyers -->
+  <section class="intro-board">
+    <h2>📢 Integrated Board for All Campus Flyers</h2>
+    <p>This is your One-Stop digital board for all the flyers and events that would normally be plastered on campus walls. Cool, online bulletin board where you can find everything happening on campus — all in one place!</p>
+    <p><strong>Why It's Awesome:</strong></p>
+    <ul>
+      <li>Everything in one place! Instant updates! Eco-friendly! Anyone can share their events!</li>
+    </ul>
+  </section>
+
+  <main class="sections-container">
+    <!-- Happening Now -->
+    <section class="fancy-card">
+      <div class="card-header gradient-now">
+        <h2>🔥 Happening Now</h2>
+      </div>
+      <div class="card-body">
+        <p>Check out events happening right now.</p>
+        <a href="events-happening-right-now.php" class="card-button">See Events</a>
+      </div>
+    </section>
+
+    <!-- Upcoming -->
+    <section class="fancy-card">
+      <div class="card-header gradient-upcoming">
+        <h2>📅 Upcoming Events</h2>
+      </div>
+      <div class="card-body">
+        <p>Don't miss these exciting upcoming events!</p>
+        <a href="events-upcoming.php" class="card-button">See Upcoming</a>
+      </div>
+    </section>
+
+    <!-- Past -->
+    <section class="fancy-card">
+      <div class="card-header gradient-past">
+        <h2>⏳ Past Events</h2>
+      </div>
+      <div class="card-body">
+        <p>Explore past highlights and memories.</p>
+        <a href="past-events.php" class="card-button">See Past</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Submit Button -->
+  <a href="submit_event.php" class="submit-button">Submit an Event</a>
+
+  <!-- Navigation Links -->
+  <nav>
+    <ul class="bottom-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="display_events.php">View Submitted Events</a></li>
+    </ul>
+  </nav>
+
+  <footer>
+    &copy; 2025 | Built with 💙 for Cascadia & UWB Students | Designed by You!
+  </footer>
+
+</body>
+</html>

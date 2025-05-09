@@ -1,0 +1,329 @@
+/* Basic Page Styles */
+body {
+    background-color: rgb(248, 236, 238); /* Light background color */
+    font-family: 'Fredoka', Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    color: grey;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Button Styling */
+a.button-link {
+    color: white;
+    background-color: #007BFF; /* Primary button color */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a.button-link:hover {
+    background-color: #0056b3; /* Hover color */
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+.bottom-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.bottom-nav a:hover {
+    color: #ffcc00; /* Hover effect */
+}
+
+/* Remove List Bullets from Bottom Navigation */
+.bottom-nav ul {
+    list-style-type: none;  /* Remove bullets */
+    padding: 0;             /* Removes padding */
+    margin: 0;              /* Removes margin */
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 50px;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Categories Section */
+#categories ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#categories li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+#categories a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.2em;
+}
+
+#categories a:hover {
+    color: #0056b3;
+}
+
+/* Upcoming Events Section Styling */
+#upcoming-events ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#upcoming-events li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Event Image Styling */
+.event-image-container {
+    display: grid; /* Use grid for better control */
+    grid-template-columns: repeat(5, 1fr); /* 5 flyers per row */
+    gap: 20px; /* Space between flyers */
+    justify-items: center; /* Center the items */
+    margin-top: 20px;
+}
+
+.event-image-container img {
+    width: 100%; /* Make sure images fill their grid cell */
+    max-width: 200px; /* Optional: Adjust the size of each flyer */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Make the image appear clickable */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-image-container img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Event Card Styling */
+.event-card {
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 19%;  /* Ensure 5 cards per row */
+}
+
+.event-card h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.event-card hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+/* Category Titles */
+h2 {
+    font-size: 2.2em;
+    color: #007BFF;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Adjusting Layout for Mobile Devices */
+@media (max-width: 1200px) {
+    .event-card {
+        width: 19%; /* Adjusted width to fit 5 cards in one row */
+    }
+}
+
+@media (max-width: 900px) {
+    .event-card {
+        width: 23%; /* Adjust for tablets or smaller large screens */
+    }
+}
+
+@media (max-width: 768px) {
+    /* For medium to smaller screens */
+    .event-card {
+        width: 45%; /* Adjust for smaller devices */
+    }
+
+    .event-image-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 flyers per row */
+    }
+
+    .event-image-container img {
+        max-width: 100%; /* Make images stack properly */
+    }
+}
+
+@media (max-width: 600px) {
+    /* For small screens */
+    .event-card {
+        width: 100%; /* Full width for very small screens */
+    }
+
+    .event-image-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 flyers per row */
+    }
+
+    .event-image-container img {
+        max-width: 100%; /* Make images fill the space */
+    }
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Stay on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+}
+
+/* Close button for the lightbox */
+.lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.lightbox-close:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* Form Container */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Label Styling */
+label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Input and Select Fields */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Success/Error Messages */
+.message {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Search Bar Styling */
+#search-bar {
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
