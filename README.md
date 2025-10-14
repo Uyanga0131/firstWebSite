@@ -22,7 +22,7 @@ Improve design with Tailwind CSS or Bootstrap
 
 <div style="border: 1px solid #b2dfdb; border-radius: 10px; padding: 15px; background-color: #f0fdfa;"> <h3>🌐 How the Live Version Works</h3>
 
-The live site is hosted on InfinityFree, which supports PHP and MySQL.
+The live site is hosted on InfinityFree, which supports PHP and MySQL. Live site: https://uyanga.free.nf
 
 When someone submits an event:
 
