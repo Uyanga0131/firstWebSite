@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="image banner.png" alt="Campus Events Website Banner" width="100%">
+  <img src="image banner.png" alt="Campus Events Website Banner" width="70%">
 </p>
 
 <h1 align="center">Campus Events Website 🎓</h1>
