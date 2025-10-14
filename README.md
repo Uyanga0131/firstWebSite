@@ -27,3 +27,6 @@ The live site is hosted on InfinityFree, which supports PHP and MySQL.
 When someone submits an event:
 
 <ul> <li>The flyer uploads automatically.</li> <li>The system decides whether the event is <b>upcoming</b>, <b>now</b>, or <b>past</b>.</li> <li>The file is stored under <code>uploads/[category]/</code>.</li> <li>The database keeps all details for public display.</li> </ul> </div>
+
+
+<div style="border: 1px solid #dcdcdc; border-radius: 10px; padding: 15px; background-color: #fdfdfd;"> <h3>📄 License</h3> This project was created for educational and portfolio purposes. You’re welcome to view, use, or modify it for learning. </div>
