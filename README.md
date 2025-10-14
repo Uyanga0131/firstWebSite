@@ -1,7 +1,21 @@
+<p align="center">
+  <img src="images/banner.png" alt="Campus Events Website Banner" width="100%">
+</p>
+
+<h1 align="center">Campus Events Website 🎓</h1>
+
+<p align="center">
+  Built with <b>PHP, MySQL, and FullCalendar.js</b><br>
+  <a href="https://uyanga.free.nf">🌐 View Live Website</a> |
+  <a href="#about-the-project">📖 Read More Below</a>
+</p>
+
+---
+
 <div style="border: 1px solid #ddd; border-radius: 8px; padding: 15px; background-color: #f9f9f9;">
 <b>About the Project</b><br><br>
 I created this project to explore how PHP and databases work together in a real web environment.  
-The goal was to make a simple, functional site where users can post and view campus events dynamically.  
+The goal was to make a simple, functional site where users can post and view campus events dynamically.
 </div>
 
 <div style="border: 1px solid #f4c2c2; border-radius: 8px; padding: 15px; background-color: #fff5f5;">
